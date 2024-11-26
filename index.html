@@ -4,22 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ecommerce</title>
-
+    
     <!-- CSS-LINKS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+    
     <!-- SITE-HEADER -->
-    <header class="site-header"></header>
-
+    <header class="site-header">
+        <div class="site-header__container container">
+            <!-- MOBILE-MENU -->
+            <svg class="site-header__hamburger" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor"><path fill-rule="evenodd" d="M0 0h16v3H0V0Zm0 6h16v3H0V6Zm16 6H0v3h16v-3Z" clip-rule="evenodd"/></svg>
+            <!-- LOGO -->
+            <a class="logo" href="index.html">
+                <img class="logo__img" src="img/icon/logo.svg" alt="Site logo" width="138" height="20">
+            </a>
+            <!-- SITENAV -->
+            <nav class="sitenav">
+                <svg class="sitenav__close" xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="currentColor"><path fill-rule="evenodd" d="M7 5.379 2.404.782.282 2.904 4.88 7.5.282 12.096l2.122 2.121L7 9.621l4.596 4.596 2.121-2.12L9.121 7.5l4.596-4.596-2.12-2.122L7 5.38Z" clip-rule="evenodd"/></svg>
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#">Collections</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#">Men</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#">Women</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#">About</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-bg"></div>
+            <!-- BASKET -->
+            <div class="site-header__basket">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path fill="currentColor" fill-rule="evenodd" d="M3.863 3.641h17.062c.583 0 1.01.55.87 1.114l-1.822 7.283a.896.896 0 0 1-.817.677l-14.321.842c.256.598.849 1.01 1.53 1.01h10.008a2.72 2.72 0 0 1 2.717 2.716A2.72 2.72 0 0 1 16.373 20c-1.878 0-3.197-1.872-2.555-3.642H8.913C9.556 18.13 8.233 20 6.358 20 4.1 20 2.83 17.385 4.22 15.611c-.77-.61-1.218-1.508-1.29-2.336l-.98-10.909v.001c.072.796.169 1.876-.051-.575H.896A.896.896 0 0 1 .896 0h1.82c.465 0 .852.354.894.816l.253 2.825Zm1.57 13.642a.926.926 0 0 0 1.85 0 .926.926 0 0 0-1.85 0Zm10.94.925a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm-11.78-6.432 13.801-.811 1.383-5.531H4.024l.57 6.342Z" clip-rule="evenodd"/></svg>
+                <div class="basket-badge">3</div>
+            </div>
+            <div class="basket-modal">
+                <h4>Cart</h4>
+                <hr>
+                <p class="basket-empty">Your cart is empty.</p>
+                <div class="basket-existent">
+                    <div>
+                        <img src="img/product/one.png" alt="Shoes img">
+                        <span>Fall Limited Edition Sneakers $125.00 x 3 <b>$375.00</b></span>
+                        <svg class="basket-trash" xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="currentColor"><path fill-rule="evenodd" d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Zm3.5.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7ZM10 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Z" clip-rule="evenodd"/><mask id="a" width="14" height="16" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><path fill="#fff" fill-rule="evenodd" d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Zm3.5.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7ZM10 6c.275 0 .5.225.5.5v7c0 .275-.225.5-.5.5a.501.501 0 0 1-.5-.5v-7c0-.275.225-.5.5-.5Z" clip-rule="evenodd"/></mask></svg>
+                    </div>
+                    <button>Checkout</button>
+                </div>
+            </div>
+            <!-- IMG -->
+            <img class="site-header__img" src="img/icon/profile-img.svg" alt="Person img" width="50" height="50">
+        </div>
+    </header>
+    
     <!-- SITE-MAIN -->
     <main class="main-content"></main>
-
+    
     <!-- SITE-FOOTER -->
     <footer class="site-footer"></footer>
-
+    
     <!-- JS-LINKS -->
     <script src="app.js"></script>
 </body>
